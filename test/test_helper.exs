@@ -1,4 +1,4 @@
-ExUnit.start
+ExUnit.start()
 
-Ecto.Adapters.SQL.Sandbox.mode(Doax3WebApp.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(Doax3.Repo, :manual)
 

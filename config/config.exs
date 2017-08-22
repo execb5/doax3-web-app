@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :doax3_web_app,
-  ecto_repos: [Doax3WebApp.Repo]
+config :doax3,
+  ecto_repos: [Doax3.Repo]
 
 # Configures the endpoint
-config :doax3_web_app, Doax3WebApp.Endpoint,
+config :doax3, Doax3Web.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "CWg7y5b23kjdFgDsHLYUy1LNY66wvl/bdIPL7rsvEiSQCTXaxVr6Rt52psG32uI/",
-  render_errors: [view: Doax3WebApp.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Doax3WebApp.PubSub,
+  secret_key_base: "lBcDk2n6oLuf0jmpM1XeHK5d0vzQXiZMg6HvwIr9fwT38toZGFcOXlT253ptjGAm",
+  render_errors: [view: Doax3Web.ErrorView, accepts: ~w(json)],
+  pubsub: [name: Doax3.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

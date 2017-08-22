@@ -1,21 +1,19 @@
-defmodule Doax3WebApp.Endpoint do
-  use Phoenix.Endpoint, otp_app: :doax3_web_app
+defmodule Doax3Web.Endpoint do
+  use Phoenix.Endpoint, otp_app: :doax3
 
-  socket "/socket", Doax3WebApp.UserSocket
+  socket "/socket", Doax3Web.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :doax3_web_app, gzip: false,
+    at: "/", from: :doax3, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
-    socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
-    plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
   end
 
@@ -35,8 +33,23 @@ defmodule Doax3WebApp.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_doax3_web_app_key",
-    signing_salt: "NhjDekEn"
+    key: "_doax3_key",
+    signing_salt: "VV+gMlET"
 
-  plug Doax3WebApp.Router
+  plug Doax3Web.Router
+
+  @doc """
+  Callback invoked for dynamically configuring the endpoint.
+
+  It receives the endpoint configuration and checks if
+  configuration should be loaded from the system environment.
+  """
+  def init(_key, config) do
+    if config[:load_from_system_env] do
+      port = System.get_env("PORT") || raise "expected the PORT environment variable to be set"
+      {:ok, Keyword.put(config, :http, [:inet6, port: port])}
+    else
+      {:ok, config}
+    end
+  end
 end
