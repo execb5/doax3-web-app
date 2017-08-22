@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :doax3, Doax3.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "Unseen2015",
   database: "doax3_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

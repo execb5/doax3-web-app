@@ -7,5 +7,7 @@ defmodule Doax3Web.Router do
 
   scope "/api", Doax3Web do
     pipe_through :api
+
+    resources "/girls", GirlController, except: [:new, :edit]
   end
 end
