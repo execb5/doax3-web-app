@@ -38,7 +38,8 @@ defmodule Doax3.Mixfile do
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:ex_machina, "~> 2.1", only: :test}
     ]
   end
 
