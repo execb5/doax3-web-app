@@ -18,3 +18,6 @@ jobs:
       - run: mix deps.get
       - run: mix ecto.create
       - run: mix test
+notify:
+  webhooks:
+    - url: https://skyhook.glitch.me/api/webhooks/359918967139336192/q4a4OCRqnu4k4GaSE1rLcgvcT08_SPo0PDgyPu3Eeg4U6fg0wihBTsQxBFELStor6n6R/circleci
