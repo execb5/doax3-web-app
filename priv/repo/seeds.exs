@@ -147,3 +147,18 @@ _hitomi = %Girl{
   favorite_color: "Sky blue"
 }
 |> Repo.insert!
+
+_helena = %Girl{
+  name: "Helena",
+  nationality: "French",
+  age: 23,
+  birthday: %Ecto.Date{year: 1993, month: 1, day: 30},
+  height: 170,
+  weight: 49,
+  bust: 89,
+  waist: 56,
+  hip: 86,
+  hobby: "Walking her dog",
+  favorite_color: "Pearl white"
+}
+|> Repo.insert!
