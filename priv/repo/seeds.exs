@@ -32,7 +32,7 @@ _honoka = %Girl{
   name: "Honoka",
   nationality: "Japanese",
   age: 18,
-  birthday: %Ecto.Date{ year: 1998, month: 3, day: 24},
+  birthday: %Ecto.Date{year: 1998, month: 3, day: 24},
   height: 150,
   weight: 45,
   bust: 99,
@@ -47,7 +47,7 @@ _marie_rose = %Girl{
   name: "Marie Rose",
   nationality: "Swedish",
   age: 18,
-  birthday: %Ecto.Date{ year: 1997, month: 6, day: 6},
+  birthday: %Ecto.Date{year: 1997, month: 6, day: 6},
   height: 147,
   weight: 39,
   bust: 74,
@@ -70,5 +70,20 @@ _nyotengu = %Girl{
   hip: 89,
   hobby: nil,
   favorite_color: "Jet black"
+}
+|> Repo.insert!
+
+_kokoro = %Girl{
+  name: "Kokoro",
+  nationality: "Japanese",
+  age: 19,
+  birthday: %Ecto.Date{year: 1996, month: 12, day: 1},
+  height: 157,
+  weight: 49,
+  bust: 89,
+  waist: 56,
+  hip: 86,
+  hobby: "Piano",
+  favorite_color: "Orange"
 }
 |> Repo.insert!
