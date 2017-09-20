@@ -57,3 +57,18 @@ _marie_rose = %Girl{
   favorite_color: "Deep blue"
 }
 |> Repo.insert!
+
+_nyotengu = %Girl{
+  name: "Nyotengu",
+  nationality: nil,
+  age: 1018,
+  birthday: nil,
+  height: 173,
+  weight: nil,
+  bust: 94,
+  waist: 58,
+  hip: 89,
+  hobby: nil,
+  favorite_color: "Jet black"
+}
+|> Repo.insert!

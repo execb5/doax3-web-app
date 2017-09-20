@@ -24,6 +24,6 @@ defmodule Doax3.Characters.Girl do
   def changeset(%Girl{} = girl, attrs) do
     girl
     |> cast(attrs, [:name, :nationality, :age, :birthday, :height, :weight, :bust, :waist, :hip, :hobby, :favorite_color])
-    |> validate_required([:name, :nationality, :age, :birthday, :height, :weight, :bust, :waist, :hip, :hobby, :favorite_color])
+    |> validate_required([:name, :age, :height, :bust, :waist, :hip, :favorite_color])
   end
 end
