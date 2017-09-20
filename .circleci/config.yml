@@ -20,4 +20,4 @@ jobs:
       - run: mix test
 notify:
   webhooks:
-    - https://discordapp.com/api/webhooks/359918967139336192/q4a4OCRqnu4k4GaSE1rLcgvcT08_SPo0PDgyPu3Eeg4U6fg0wihBTsQxBFELStor6n6R/circle
+    - https://discordapp.com/api/webhooks/359918967139336192/q4a4OCRqnu4k4GaSE1rLcgvcT08_SPo0PDgyPu3Eeg4U6fg0wihBTsQxBFELStor6n6R
