@@ -1,6 +1,6 @@
 # Doax3
 
-[![CircleCI](https://circleci.com/gh/execb5/doax3-web-app/tree/master.svg?style=svg)](https://circleci.com/gh/execb5/doax3-web-app/tree/master)
+[![CircleCI](https://circleci.com/gh/execb5/doax3-web-app/tree/master.svg?style=svg&circle-token=eb0636de7a712648b1e2070944728e1cfea7fa6e)](https://circleci.com/gh/execb5/doax3-web-app/tree/master)
 
 To start your Phoenix server:
 
