@@ -132,3 +132,18 @@ _momiji = %Girl{
   favorite_color: "Crimson"
 }
 |> Repo.insert!
+
+_hitomi = %Girl{
+  name: "Hitomi",
+  nationality: "German",
+  age: 20,
+  birthday: %Ecto.Date{year: 1995, month: 5, day: 25},
+  height: 160,
+  weight: 49,
+  bust: 89,
+  waist: 58,
+  hip: 84,
+  hobby: "Cooking",
+  favorite_color: "Sky blue"
+}
+|> Repo.insert!
